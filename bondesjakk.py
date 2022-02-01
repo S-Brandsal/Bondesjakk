@@ -149,7 +149,7 @@ app_running = True
 
 pygame.init()
 window = pygame.display.set_mode((width, height))
-pygame.display.set_caption('Bondasjakk')
+pygame.display.set_caption('Bondesjakk')
 
 img_cross = pygame.image.load("resources/cross.png")
 img_circle = pygame.image.load("resources/circle.png")
@@ -190,10 +190,11 @@ while app_running:
                         if check_for_win():
                             game_over = True
                             print("Tre på rad!")
+                            
                         elif full_board():
                             game_over = True
                 else:
-                    print("Chill! The game is over bro!")
+                    print("Trykk escape for å spille igjen!")
 
     # Exit early if the app should shut down
     if not app_running:
